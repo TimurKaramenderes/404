@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "Monument";
+    src: url(/Users/karemindorus/404/MonumentExtended/monumentextended-regular.otf);
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #ebf3fa;
+  flex-direction: column;
+}
+.text {
+    font-family: "Monument", sans-serif;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+}
+.button {
+  position: relative;
+  width: 20em;
+  height: 20em;
+  font-size: 3em;
+  outline: none;
+  border: none;
+  background-color: #e3edf7;
+  border-radius: 16px;
+  box-shadow: 4px 2px 16px hsla(208, 30%, 64%, 48%), -4px -2px 16px #ffff;
+  font-family: "Monument", sans-serif;
+  color: #31456a;
+}
+.button:active {
+  background-color: #e3edf7;
+  box-shadow: inset 3px 3px 7px hsla(208, 30%, 64%, 48%),
+    inset -3px -3px 7px #ffff;
+}
+.button:active::before{
+  content: "";
+  width: calc(20em + 2px);
+  height: calc(20em + 2px);
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  border-radius: 16px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 1) 20%,
+    rgba(55, 83, 111, 0.3) 90%
+  );
+}
+.button:active .text {
+  padding: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: calc(20em - 3px);
+  height: calc(20em - 3px);
+  top: 0;
+  left: 0;
+  border-radius: 16px;
+  background-color: #e3edf7;
+  box-shadow: inset 3px 3px 7px hsla(208, 30%, 64%, 48%),
+    inset -3px -3px 7px #ffff;
+}
+
+
+
+.text:hover{
+padding: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #31456a;
+  position: absolute;
+  width: calc(20em - 3px);
+  height: calc(20em - 3px);
+  top: 0;
+  left: 0;
+  border-radius: 16px;
+  background-color: #e3edf7;
+  box-shadow: inset 3px 3px 7px hsla(208, 30%, 64%, 48%),
+    inset -3px -3px 7px #ffff;
+}
+
+
+}
+ 
+a:visited {
+    text-decoration: none;
+    color: #31456a;
+}
+
+
+a:link {
+    text-decoration: none;
+    color: #31456a;
+}
+
+
+
